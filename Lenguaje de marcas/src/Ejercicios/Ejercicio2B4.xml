@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE emails SYSTEM "Ejercicio2B4.dtd"[
+<emails>
+	<email>
+		<para>juanmiguel@gmail.com</para>
+		<cc>loco@gmail.com</cc>
+		<cco>enganosvemos@gmail.com</cco>
+		<asunto>LOKO TU MUJER ES</asunto>
+		<cuerpo>UNAAAA</cuerpo>
+		<adjunto>
+			<nombre>>LOCKO</nombre>
+			<mime-type>image</mime-type>
+			<longitud>654984984984KB</longitud>
+		</adjunto>
+	</email>
+>]

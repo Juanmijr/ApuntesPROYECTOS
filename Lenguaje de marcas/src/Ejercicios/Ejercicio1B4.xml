@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE placasBase SYSTEM "Ejercicio1B4.dtd">
+<PlacasBase>
+	<placaBase>	
+		<microprocesador>Radeon 79849849EU</microprocesador>
+		<memoria>32 Gb</memoria>
+		<modelo>prime z270-A</modelo>
+		<fabricante><Asus/></fabricante>
+		</placaBase>
+		<placaBase>	
+		<microprocesador>Radeon 79849849EU</microprocesador>
+		<memoria>64 Gb</memoria>
+		<modelo>prime z270-B</modelo>
+		<fabricante><Intel/></fabricante>
+		</placaBase>
+</PlacasBase>
+			
+			
+			
+	
