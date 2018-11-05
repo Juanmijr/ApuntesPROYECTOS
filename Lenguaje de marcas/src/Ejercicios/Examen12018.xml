@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE playas SYSTEM "Examen12018.dtd">
+<playas>
+	<playa nombre="Benalmádena" tipoembarcacion="altamar" coloragua="azul">
+		<calidadsocorrismo>Excelente
+			<numerovisitantes numero="100000"/>
+		</calidadsocorrismo>
+		<banderaazul>
+			<activa></activa>
+		</banderaazul>
+	</playa>
+	<playa nombre="Malapesquera" tipoembarcacion="bajamar">
+		<calidadsocorrismo>Buena, &calidad;
+			<numerovisitantes numero="50000"/>
+		</calidadsocorrismo>	
+	</playa>
+	<socorrista nombre="Ramón"/>
+	<socorrista nombre="Ana"/>
+	<zona zonasocorrista="Ramón">Oeste</zona>
+	<trabajo tipotrabajo="Ramón Ana"/>
+	<vigilante nombre="Juan Miguel" pistola="si" tipoplaca= "autorizado"/>
+</playas>

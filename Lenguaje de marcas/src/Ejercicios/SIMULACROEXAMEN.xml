@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videojuegos SYSTEM "SIMULACROEXAMEN.dtd">
+<videojuegos>
+	<videojuego>
+		<FIFA>
+			<jugador numero= "&numero"  nombre="Lionel Messi" nivel="101" codigo="A3"/>
+			<jugador nombre="Cristiano Ronaldo" posicion="Extremo" nivel="99" potencial="103"/>
+			<jugador nombre="Kyliam Mbappé" nivel="85" posicion="Delantero" potencial="150" codigo="A2"/>
+			<portero numero= "&numero" nombre="Thibaut Courtois" nivel="92" potencial="100"/>
+			<entrenador>Cholo Simeone</entrenador>
+		</FIFA>
+	</videojuego>
+</videojuegos>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="balonmano" type="Equipos"/>
+  
+  <xs:complexType name="Equipos">
+  	<xs:sequence>
+  		<xs:element name="Club" type="tipoClub"/>
+  		<xs:element name="Presidente" type="tipoPresi" maxOccurs="unbounded"/>
+  		<xs:element name="Equipo" type="tipoEquipo"/>
+  		<xs:element name="Sancionados" type="tipojugador" maxOccurs="unbounded"/>
+  		<xs:element name="Autobus" type="tipoBus"/>
+  		<xs:element name="MACjugador" type="MAC"/>
+  		<xs:element name="Tallaje" type="tipoTallas" maxOccurs="unbounded"/>
+  		<xs:element name="Pabellón" type="tipoPabellon" maxOccurs="unbounded"/>
+  	</xs:sequence>
+  </xs:complexType>
+  
+  
+  
+  <xs:complexType name="tipoPista">
+  	<xs:all>
+  		<xs:element name="extension" type="xs:string"/>
+  		<xs:element name="suelo" type="xs:string"/>
+  	</xs:all>
+  </xs:complexType>
+  
+  
+  
+  <xs:complexType name="tipoPabellon">
+    <xs:complexContent>
+      <xs:extension base="tipoPista">
+        <xs:attribute name="localizacion" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  
+  
+  <xs:complexType name="tipoTallas">
+  	<xs:attribute name="dimension" type="dimensiones"/>
+  </xs:complexType>
+  
+  
+  <xs:simpleType name="dimension0-1000">
+  	<xs:restriction base="xs:integer">
+  		<xs:minInclusive value="1"/>
+  		<xs:maxInclusive value="1000"/>
+  	</xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="dimension0-150">
+  	<xs:restriction base="dimension0-1000">
+  		<xs:maxInclusive value="150"/>
+  	</xs:restriction>
+  </xs:simpleType>
+  
+  
+  <xs:simpleType name="dimensionDescrita">
+  	<xs:restriction base="xs:string">
+  		<xs:enumeration value="M"/>
+  		<xs:enumeration value="L"/>
+  		<xs:enumeration value="XL"/>
+  	</xs:restriction>
+  </xs:simpleType>
+  
+  
+  <xs:simpleType name="dimension">
+  	<xs:union memberTypes="dimension0-150 dimensionDescrita"/>
+  </xs:simpleType>
+  
+  
+  <xs:simpleType name="dimensiones">
+  	<xs:list itemType="dimension"/>
+  </xs:simpleType>
+  
+  <xs:complexType name="MAC">
+  	<xs:attribute name="MACjugador">
+  		<xs:simpleType>
+  			<xs:restriction base="xs:string">
+  				<xs:pattern value=""/>
+  			</xs:restriction>
+  		</xs:simpleType>
+  	</xs:attribute>
+</xs:complexType>
+  
+  <xs:complexType name="tipojugador">
+  	<xs:attribute name="DNIsancionado">
+  		<xs:simpleType>
+  			<xs:restriction base="xs:string">
+  				<xs:pattern value="[0-9]{8}[A-Z]"/>
+  			</xs:restriction>
+  		</xs:simpleType>
+  	</xs:attribute>
+  </xs:complexType>
+  
+  
+  <xs:complexType name="tipoBus">
+  	<xs:attribute name="matricula">
+  		<xs:simpleType>
+  			<xs:restriction base="xs:string">
+  				<xs:pattern value="[A-Z]{3}[0-9]{4}"/>
+  			</xs:restriction>
+  		</xs:simpleType>
+  	</xs:attribute>
+</xs:complexType>
+  
+  <xs:complexType name="tipoEquipo">
+  	<xs:choice>
+  		<xs:element name="Jugadores">
+  			<xs:complexType>
+  				<xs:attribute name="tipojugador">
+  					<xs:simpleType>
+  						<xs:restriction base="xs:string">
+  							<xs:enumeration value="canterano"/>
+  							<xs:enumeration value="fichaje"/>
+  						</xs:restriction>
+  					</xs:simpleType>
+  				</xs:attribute>
+  			</xs:complexType>
+  		</xs:element>
+  		<xs:element name="jugador">
+  			<xs:complexType>
+  				<xs:attribute name="numero">
+  					<xs:simpleType>
+  						<xs:restriction base="xs:integer">
+  							<xs:minInclusive value="0"/>
+  							<xs:maxInclusive value="100"/>
+  						</xs:restriction>
+  					</xs:simpleType>
+  				</xs:attribute>
+  			</xs:complexType>
+  		</xs:element>
+  	</xs:choice>
+  </xs:complexType>
+  
+  
+  <xs:complexType name="tipoPresi">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="nombre" type="xs:string" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  
+  
+  <xs:complexType name="tipoClub" mixed="true">
+  	<xs:sequence>
+  		<xs:element name="jugadores" type="tipojugadores" maxOccurs="unbounded"/>
+  	</xs:sequence>
+  	<xs:attribute name="nombre" type="xs:string"/>
+  </xs:complexType>
+
+
+
+  <xs:complexType name="tipojugadores">
+	<xs:attribute name="nombre" type="xs:string"/>
+	<xs:attribute name="número" type="xs:integer"/>
+  </xs:complexType>
+
+</xs:schema>

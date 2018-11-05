@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<balonmano xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="balonmano.xsd">
+	<Club nombre="Club Balonmano Aguilar">Equipo de 1º Nacional
+		<jugadores nombre="Aléix Gomez" número="3"/>
+	</Club>
+ 	<Presidente nombre="Francisco Rosa">25 MIL EUROS</Presidente>
+	<Equipo>
+		
+		<jugador numero="5"/>
+	</Equipo>
+ 	<Sancionados DNIsancionado="12345678A"/>
+ 	<Autobus matricula= "ABC1234"/>
+ 	<MACjugador MACjugador="0B:21:D3:4R:03:V4"/>
+	<Tallaje dimension="XL  L  M 50 "/>
+ 	<Pabellón localizacion="Calle Azucena Nº 14">
+ 		<extension>1200m2</extension>
+ 		<suelo>Azul</suelo>
+ 	</Pabellón>
+</balonmano>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY numero "numero 1">
+<!ENTITY jugador% caracteristicas "numero CDATA #FIXED "numero 1" 
+									posicion (defensa | atacante) "atacante"
+									nombre IDREFS #REQUIRED 
+									nivel CDATA #REQUIRED 
+									potencial CDATA #IMPLIED 
+									codigo ID #REQUIRED ">
+<!ELEMENT videojuegos (videojuego)>
+<!ELEMENT videojuego (FIFA)>
+<!ELEMENT FIFA (jugador*|portero*|entrenador*)*>
+<!ELEMENT jugador EMPTY>
+<!ELEMENT portero EMPTY>
+<!ELEMENT entrenador ANY>
+<!ATTLIST jugador %caracteristicas;>
+<!ATTLIST portero %caracteristicas;>
+]>

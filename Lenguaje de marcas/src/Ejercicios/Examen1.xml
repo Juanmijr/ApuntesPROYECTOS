@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE profesores SYSTEM "examen.dtd">
+<profesores>
+	<profesor nombre= "Rafael" apellido= "Muñoz" Lugar de nacimiento= "Lucena">
+		<departamento rama= "Informática"/>
+		<asignatura nombre= "Programación"/>
+			<clase nombre= "1 DAW"
+				<numerodealumnos>30</numerodealumnos>
+			</clase>
+			<horasimpartidas horas semanales= "8"/>
+		</asignatura>
+		<asignatura nombre= "Lenguaje de Marcas">
+			<clase nombre= "1 DAW"
+			</clase>
+			<horasimpartidas horas semanales="4"
+		</asignatura>
+		<directiva>Sí</directiva>
+	</profesor>
+	
+</profesores>
+

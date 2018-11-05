@@ -21,6 +21,16 @@ public class EjercicioCB32 {
 			num2 =  Integer.parseInt(JOptionPane.showInputDialog("Introduzca el primer número"));
 		JOptionPane.showMessageDialog(null, "Resultado: " + (num1 - num2));
 		break;
+		case 3:
+			num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduzca el primer número"));
+			num2 =  Integer.parseInt(JOptionPane.showInputDialog("Introduzca el primer número"));
+		JOptionPane.showMessageDialog(null, "Resultado: " + (num1 * num2));
+		break;
+		case 4:
+			num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduzca el primer número"));
+			num2 =  Integer.parseInt(JOptionPane.showInputDialog("Introduzca el primer número"));
+		JOptionPane.showMessageDialog(null, "Resultado: " + (num1 - num2));
+		break;
 		}
 		
 		

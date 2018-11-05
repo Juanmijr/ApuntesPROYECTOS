@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT playas (playa+, socorrista*, zona*, trabajo*, vigilante?)>
+<!ELEMENT playa (calidadsocorrismo, banderaazul?)>
+<!ELEMENT calidadsocorrismo (#PCDATA | numerovisitantes)*>
+<!ELEMENT banderaazul (activa? | pasiva?)>
+<!ENTITY % atributoNombre "nombre CDATA #REQUIRED">
+<!ENTITY calidad "pero mejorable">
+<!ATTLIST playa %atributoNombre;
+				tipoembarcacion (altamar | bajamar) #IMPLIED 
+				coloragua CDATA #FIXED "azul">
+<!ELEMENT numerovisitantes EMPTY>
+<!ATTLIST numerovisitantes numero CDATA #REQUIRED>
+<!ELEMENT socorrista EMPTY>
+<!ATTLIST socorrista nombre ID #REQUIRED>
+<!ELEMENT zona (#PCDATA)>
+<!ATTLIST zona zonasocorrista IDREF #REQUIRED>
+<!ELEMENT trabajo EMPTY>
+<!ATTLIST trabajo tipotrabajo IDREFS #REQUIRED>
+<!ELEMENT vigiliante EMPTY>
+<!ATTLIST vigilante %atributoNombre;
+					pistola ( si | no) #IMPLIED
+					tipoplaca CDATA #FIXED "autorizado">

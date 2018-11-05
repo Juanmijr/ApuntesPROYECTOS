@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT profesores (profesor+)>
+<!ELEMENT profesor (departamento? | asignatura+ | directiva?)*>
+<!ENTITY % atributonombre "nombre CDATA #REQUIRED>
+<!ENTITY si "Sí">
+<!ATTLIST profesor %atributonombre; 
+			apellido NMTOKEN #REQUIRED
+			lugar de nacimiento ID #IMPLIED>
+<!ELEMENT departamento EMPTY>
+<!ATTLIST departamento rama IDREFS #REQUIRED>
+<!ELEMENT asignatura (clase, horasimpartidas?)>
+<!ATTLIST asignatura  %atributonombre>
+<!ELEMENT clase (numerodealumnos?)>
+<!ELEMENT numerodealumnos #PCDATA>
+<!ELEMENT horasimpartidas EMPTY>
+<!ATTLIST horasimpartidas horas semanales CDATA #IMPLIED>
+
