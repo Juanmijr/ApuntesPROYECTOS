@@ -21,7 +21,7 @@ xsi:noNamespaceSchemaLocation="EjercicioRafa.xsd">
 	</personajes>
 	<colorPersonajes principal="amarillo" rojo="120" verde="150" azul="130"/>
 	<MontgomeryBurns dni ="12345678A" matricula="0001ABC" mac="12:e4:3f:56:ae:4a" color="amarillo"/>
-	<localidadrival>Sevilla</localidadrival>
-	<localidadesamigas>Madrid</localidadesamigas>
+	<localidadRival>Sevilla</localidadRival>
+	<localidadesAmigas>Madrid</localidadesAmigas>
 	<Barney bebidaDiaria="" bebidaFavorita="s"
 </simpsons>
