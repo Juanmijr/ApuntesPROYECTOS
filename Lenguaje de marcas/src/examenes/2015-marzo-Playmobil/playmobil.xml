@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="burry-queen.xsl" type="text/xsl"?>
+<tienda-juguetes nombreEmpresa="Toy world Lucena" Dirección="Polígono Principe Felipe, parcela 15"
+    telefono="642125896" email="toy-world-lucena@gmail.com">
+    <playmobil>
+        <producto nombre="Portal de belén" referencia="EU1254852" precio="11.99" moneda="€"
+            imagen="http://s21.postimg.org/8rdiv2skn/belen.jpg" ordenacion="1" dobleAncho="s">
+            <disponibilidad tienda="Toy world Montilla" href="http://www.amazon.es" unidades="18"/>
+            <disponibilidad tienda="Toy world Cabra" href="http://www.amazon.es" unidades="20"/>
+        </producto>
+        <producto nombre="Nave espacial Halcón milenario" referencia="EU125850" precio="69.99" moneda="€"
+            imagen="http://s23.postimg.org/43406ro7f/halcon.jpg" ordenacion="3" dobleAncho="n">
+            <disponibilidad tienda="Toy world Montilla" href="http://www.amazon.es" unidades="15"/>
+            <disponibilidad tienda="Toy world Cabra" href="http://www.amazon.es" unidades="5"/>
+        </producto>
+        <producto nombre="Costureras polacas" referencia="EN1214258" precio="14.99" moneda="€"
+            imagen="http://s27.postimg.org/n8o13lyub/costurera.jpg" ordenacion="2" dobleAncho="s">
+            <disponibilidad tienda="Toy world Aguilar" href="http://www.amazon.es" unidades="2"/>
+        </producto>      
+    </playmobil>
+    <ofertas>
+        <oferta codigo-promo="DIAPADRE" descuento="21"/>
+        <oferta codigo-promo="SEGUNDAUNIDAD" descuento="25"/>
+    </ofertas>
+    
+</tienda-juguetes>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="burry-queen.xsl" type="text/xsl"?>
+<burry-queen nombreEmpresa="Burry-Queen" slogan="El secreto está la carne">
+    <productos>
+        <producto nombre="burrito básico" ingredientes="masa normal, chili, carne de cerdo, judias y queso" precio="3.99"
+            imagen="http://s4.postimg.org/hqy12nma5/taco_basico.jpg" ordenacion="1" dobleAncho="s">
+            <oferta codigo-promo="DIAPADRE" descuento="21"/>
+            <oferta codigo-promo="SEGUNDAUNIDAD" descuento="25"/>
+        </producto>
+        <producto nombre="burrito ternera" ingredientes="masa normal, chili, carne de ternera, judias, pimiento y queso" precio="4.99"
+            imagen="http://s27.postimg.org/658ft2w2b/taco_ensalada.jpg" ordenacion="2" dobleAncho="n">
+            <oferta codigo-promo="DIAPADRE" descuento="19"/>
+            <oferta codigo-promo="SEGUNDAUNIDAD" descuento="25"/>
+        </producto>
+        <producto nombre="burrito pollo" ingredientes="masa normal, chili, de pollo, arroz, pimiento rojo, salsa barbacoa y mostaza" precio="4.49"
+            imagen="http://s8.postimg.org/v3b03kenp/taco_pollo.png" ordenacion="4" dobleAncho="n">
+            <oferta codigo-promo="DIADELPOLLO" descuento="17"/>
+            <oferta codigo-promo="SEGUNDAUNIDAD" descuento="20"/>
+        </producto>
+        <producto nombre="burrito chino" ingredientes="masa crujiente, extra de carne de pollo, arroz, pimiento rojo y queso" precio="4.79"
+            imagen="http://s22.postimg.org/mwc7egp9d/taco_arroz.png" ordenacion="3" dobleAncho="n">
+            <oferta codigo-promo="DRAGON" descuento="30"/>
+            <oferta codigo-promo="FUERAIVA" descuento="21"/>
+        </producto>
+        <producto nombre="burrito deluxe" ingredientes="masa normal, carne de ternera, judias, arroz, queso, salsa barbacoa, aguacate y queso" precio="5.99"
+            imagen="http://s16.postimg.org/dwxpdkwtx/taco_deluxe.jpg" ordenacion="5" dobleAncho="n">
+            <oferta codigo-promo="SEGUNDAUNIDAD" descuento="25"/>
+        </producto>
+    </productos>
+    <webs-amigas>
+        <web href="http://www.burgerking.es" descripcion="Burguer King"/>
+        <web href="http://www.mcdonalds.es" descripcion="Mc Donalds"/>
+        <web href="http://www.telepizza.es" descripcion="Telepizza"/>
+    </webs-amigas>
+    
+</burry-queen>
