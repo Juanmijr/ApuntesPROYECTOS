@@ -2,7 +2,7 @@
 <xsl:stylesheet
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	<xsl:output method="html" encoding="iso-8859-1" />
-	<xsl:template match="/gormitis">
+	<xsl:template match      			<th></th>="/gormitis">
 		<html>
 			<head>
 				<title>GORMITIS</title>
@@ -12,8 +12,7 @@
 				<table width="95%" border="1">
 					<tr>
 						<th></th>
-						<th>Gormiti</th>
-						<th></th>
+						<th>Gormiti</th>º
 						<th>Tribu</th>
 					</tr>
 					<xsl:for-each select="gormiti">

@@ -13,7 +13,6 @@
       		<tr>
       			<th></th>
       			<th>Jugador</th>
-      			<th></th>
       			<th>Jugada</th>
       		</tr>
       		<xsl:for-each select="jugadasDescritas/jugada">
